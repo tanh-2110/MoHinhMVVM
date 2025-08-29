@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "7733039185",
+    "project_id": "tuananh-7d1ee",
+    "storage_bucket": "tuananh-7d1ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7733039185:android:d0faa04036483c591e2870",
+        "android_client_info": {
+          "package_name": "com.example.mohinhmvvm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNRy7-pobm1zFyt0pWypMyNnwJV_jNifE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

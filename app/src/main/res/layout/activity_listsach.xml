@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listSachLayout"
+    android:padding="26dp"
+    android:background="@drawable/anhbackr2"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_listsach"
+        android:text="List Sach"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#00FFFF"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/ed_tensachh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_listsach"
+        tools:layout_editor_absoluteX="30dp"
+        android:textColor="#58F010"
+        android:hint="Nhap vao day ten sach"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_motaa"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ed_tensachh"
+        android:textColor="#58F010"
+        android:hint="Nhap vao day mo ta"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_giaa"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ed_motaa"
+        android:textColor="#58F010"
+        android:hint="Nhap vao day gia"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ck_chonV"
+        app:layout_constraintTop_toBottomOf="@id/ed_giaa"
+        app:layout_constraintBottom_toTopOf="@id/cacsach"
+        android:text="Tich vao day di"
+        android:textColor="#F7D806F2"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cacsach"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ed_giaa"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnThem"
+            android:text="Them"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            /><Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSua"
+        android:text="Sua"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        /><Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnXoa"
+        android:text="Xoa"
+        android:layout_weight="1"
+        android:layout_marginRight="4dp"
+        />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_sach"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cacsach"
+        tools:layout_editor_absoluteX="26dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
